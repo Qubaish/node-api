@@ -1,0 +1,35 @@
+{
+  "name": "nodejs_similiarweb_api",
+  "version": "1.0.0",
+  "description": "get visitors from similarweb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carma-int/nodejs_similiarweb_api.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Carma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carma-int/nodejs_similiarweb_api/issues"
+  },
+  "homepage": "https://github.com/carma-int/nodejs_similiarweb_api#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "helmet": "^3.9.0",
+    "log-timestamp": "^0.1.2",
+    "md5": "^2.2.1",
+    "memcached": "^2.2.2",
+    "moment": "^2.20.1",
+    "pg": "^7.4.0",
+    "pg-escape": "^0.2.0",
+    "strip-json-comments": "^2.0.1"
+  }
+}

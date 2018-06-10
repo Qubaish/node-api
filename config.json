@@ -1,0 +1,73 @@
+{
+    // Choose here between configuration, by default there
+    // is two of them: development and production
+    "environment": "development",
+    // Development environment
+    "development": {
+        // Server main configuration
+        "outlet" : {
+            "dateRange" : 6, // 6 months ago
+            "maxRecords" : 1000
+        },
+        "api": {
+            "key" : "bddd06a3de313ed4561f16ead252e4ac",
+            "host" :"https://api.similarweb.com/v1/website/",
+            "dateRange": [6, 2], // number defines months e.g (between 6 and 2 months ago),
+            "main_domain_only": "falseStatus",
+            "okDomain": true,
+            "notOkDomain": false,
+            "cluster": false,
+            "port": 8080
+        },
+        // Database informations
+        "database": {
+            "host": "localhost",
+            "port": 5432,
+            "database": "bodhi_dev",
+            "user": "qubaishbhatti",
+            "password": "postgres",
+            "min": 2,
+            "max": 4,
+            "idle": 30000,
+            "timeout": 10000
+        },
+         "memcached": {
+            "servers": [
+                "127.0.0.1:11211"
+            ],
+            "retries": 10,
+            "retry": 10000,
+            "expire": 10
+        }
+    },
+
+    // Development environment
+    "staging": {
+        "database": {
+            "host": "172.31.57.10",
+            "port": 5432,
+            "database": "samsara_api_staging",
+            "user": "samsara",
+            "password": "6d065d22ea467f8ec084643500da29e6",
+            "min": 2,
+            "max": 4,
+            "idle": 30000,
+            "timeout": 6000
+        }
+    },
+
+    // Production environment
+    "production": {
+        "database": {
+            "host": "172.31.48.203",
+            "port": 5432,
+            "database": "samsara",
+            "user": "samsara",
+            "password": "f0df5cc10a383d7da03a70fbd9418e67",
+            "min": 2,
+            "max": 4,
+            "idle": 30000,
+            "timeout": 2000
+        }
+    }
+}

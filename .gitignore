@@ -1,0 +1,6 @@
+/.idea/
+/tmp/
+/typings/
+/node_modules/
+.DS_Store
+/dist/**/*.js.map
